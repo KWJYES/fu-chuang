@@ -27,7 +27,7 @@ public class ItemServiceImpl implements ItemService {
     }
 
     @Override
-    public ResultVo getItemByAccountAndImageId(String account, String imageId) {
+    public ResultVo getItemByAccountAndImageId(String account, int imageId) {
         List<Item> items=itemDao.findByAccountAndImageId(account,imageId);
         if (items.size()==0){
             return ResultVo.error(CodeMsg.SELECT_ERROR);

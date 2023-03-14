@@ -38,7 +38,7 @@ public class ItemController {
     }
 
     @PostMapping(value = "/findByAccountAndImageId")
-    public ResultVo findByAccountAndImageId(@Param("account") String account,@Param("imageId") String imageId){
+    public ResultVo findByAccountAndImageId(@Param("account") String account,@Param("imageId") int imageId){
         return itemService.getItemByAccountAndImageId(account,imageId);
     }
 }

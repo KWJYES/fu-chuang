@@ -21,7 +21,7 @@ public interface ItemDao {
     void delete(Item item);
 
     @Select("select* from t_item where account = #{account} and imageId = #{imageId}")
-    List<Item> findByAccountAndImageId(String account,String imageId);
+    List<Item> findByAccountAndImageId(String account,int imageId);
 
     @Select("select* from t_item where account = #{account}")
     List<Item> findByAccount(String account);

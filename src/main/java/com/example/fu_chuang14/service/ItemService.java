@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 @Service
 public interface ItemService {
     ResultVo getItemByAccount(String account);
-    ResultVo getItemByAccountAndImageId(String account,String imageId);
+    ResultVo getItemByAccountAndImageId(String account,int imageId);
 
     ResultVo addItem(Item item);
 
